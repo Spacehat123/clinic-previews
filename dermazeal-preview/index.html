@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DermaZeal Clinic — Skin, Hair &amp; Laser Dermatology in HSR Layout | Bengaluru</title>
+  <meta name="description" content="Book dermatology, hair, and laser consultations directly on WhatsApp at DermaZeal Clinic, HSR Layout, Bengaluru." />
+  <meta property="og:title" content="DermaZeal Clinic — Bengaluru" />
+  <meta property="og:description" content="Book dermatology, hair, and laser consultations directly on WhatsApp at DermaZeal Clinic, HSR Layout, Bengaluru." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e3a2f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23c85a32'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "DermaZeal Clinic", "description": "Book dermatology, hair, and laser consultations directly on WhatsApp at DermaZeal Clinic, HSR Layout, Bengaluru.", "telephone": "+91 90086 24202", "email": "contact@dermazealclinic.com", "priceRange": "Direct Clinic Consultation", "address": {"@type": "PostalAddress", "streetAddress": "#422, 1st Floor, 27th Main Road, Next to ICICI Bank, HSR Layout Sector-1, Bengaluru 560102", "addressLocality": "Bengaluru", "addressCountry": "IN"}, "openingHours": ["Mo-Sa 10:00-20:00"]}</script>
+  <style>
+    html.lenis, html.lenis body { height: auto; }
+    .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+    .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+    .lenis.lenis-smooth iframe { pointer-events: none; }
+
+    :root {
+      --bg: #f5efe6;
+      --surface: #ffffff;
+      --ink: #18241d;
+      --muted: #516158;
+      --border: rgba(30, 58, 47, 0.13);
+      --primary: #1e3a2f;
+      --primary-dark: #152921;
+      --accent: #c85a32;
+      --font-display: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 84px; }
+    body {
+      margin: 0; font-family: var(--font-sans); background: var(--bg); color: var(--ink);
+      line-height: 1.6; overflow-x: clip; padding-bottom: 76px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 70;
+      background: var(--accent); transform-origin: 0% 50%; transform: scaleX(0); pointer-events: none;
+    }
+
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 70px; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 800; font-size: 1rem; letter-spacing: -0.01em; }
+    .brand-mark {
+      width: 34px; height: 34px; border-radius: 10px;
+      background: var(--primary); color: #fff;
+      display: grid; place-items: center; font-size: 0.85rem; font-weight: 800;
+    }
+    .nav-links { display: flex; gap: 24px; font-size: 0.9rem; color: var(--muted); font-weight: 500; }
+    .nav-links a:hover { color: var(--ink); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: 0.92rem;
+      border: 1px solid transparent; cursor: pointer; will-change: transform;
+      transition: background .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .btn-accent { background: var(--accent); color: #fff; }
+    .btn-accent:hover { background: color-mix(in srgb, var(--accent) 86%, #000); }
+    .btn-outline { background: var(--surface); border-color: var(--border); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--primary); }
+
+    .hero {
+      padding: 48px 0 42px;
+      display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center;
+    }
+    .eyebrow {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--primary); margin-bottom: 14px;
+    }
+    h1 {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: clamp(2.3rem, 4.3vw, 3.8rem);
+      line-height: 1.06; letter-spacing: -0.025em; margin: 0 0 20px;
+    }
+    .hero-sub { color: var(--muted); font-size: 1.05rem; max-width: 48ch; margin: 0 0 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .hero-media {
+      border-radius: 24px; overflow: hidden; border: 1px solid var(--border);
+      background: var(--surface); aspect-ratio: 4 / 3;
+      box-shadow: 0 24px 60px -28px rgba(30, 58, 47, 0.25);
+    }
+    .hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* Bamboo-inspired Path-Splitting Utility Bar */
+    .path-strip {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+      margin: 10px 0 44px;
+    }
+    .path-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 18px 20px;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      transition: border-color .2s ease, transform .2s ease;
+    }
+    .path-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .path-card strong { display: block; font-size: 0.98rem; }
+    .path-card span { font-size: 0.82rem; color: var(--muted); }
+    .path-arrow {
+      width: 32px; height: 32px; border-radius: 50%; background: var(--bg);
+      display: grid; place-items: center; font-weight: 700; color: var(--accent); flex-shrink: 0;
+    }
+
+    section { padding: 52px 0; border-top: 1px solid var(--border); }
+    .sec-kicker {
+      font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+    }
+    .sec-title {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: clamp(1.75rem, 3vw, 2.45rem); line-height: 1.12; margin: 0 0 10px;
+    }
+    .sec-sub { color: var(--muted); margin: 0 0 28px; max-width: 56ch; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .spotlight-card {
+      position: relative; isolation: isolate; overflow: hidden;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 18px; padding: 24px;
+      --mx: 50%; --my: 50%; --spot-opacity: 0;
+    }
+    .spotlight-card::before, .spotlight-card::after {
+      content: ""; position: absolute; inset: 0; border-radius: inherit;
+      pointer-events: none; opacity: var(--spot-opacity); transition: opacity 220ms ease;
+    }
+    .spotlight-card::before {
+      z-index: -1;
+      background: radial-gradient(280px circle at var(--mx) var(--my),
+        color-mix(in srgb, var(--accent) 11%, transparent), transparent 70%);
+    }
+    .spotlight-card::after {
+      z-index: 2; padding: 1.25px;
+      background: radial-gradient(220px circle at var(--mx) var(--my),
+        color-mix(in srgb, var(--accent) 52%, transparent), transparent 68%);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    }
+    .spotlight-card h3 { margin: 0 0 7px; font-size: 1.08rem; }
+    .spotlight-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .price-tag {
+      display: inline-block; margin-top: 12px; font-size: 0.8rem; font-weight: 700;
+      color: var(--primary); background: color-mix(in srgb, var(--primary) 10%, transparent);
+      padding: 5px 11px; border-radius: 999px;
+    }
+
+    .booking-split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 32px; align-items: start; }
+    .field { margin-bottom: 13px; }
+    .field label, .field-label { display: block; font-size: 0.82rem; font-weight: 700; margin-bottom: 5px; }
+    .field input, .field select {
+      width: 100%; padding: 11px 13px; border-radius: 10px;
+      border: 1px solid var(--border); font-size: 0.95rem; background: var(--bg); color: var(--ink);
+    }
+    .slot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 16px; }
+    .slot-btn {
+      padding: 10px; border-radius: 10px; border: 1px solid var(--border);
+      background: var(--bg); font-size: 0.84rem; font-weight: 700; cursor: pointer;
+    }
+    .slot-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .status-msg { margin-top: 12px; padding: 10px 12px; border-radius: 10px; font-size: 0.88rem; display: none; }
+    .status-msg.ok { display: block; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+    .upi-box { margin-top: 12px; padding: 12px; border-radius: 10px; border: 1px dashed var(--accent); font-size: 0.84rem; }
+
+    details {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 16px 20px; margin-bottom: 10px;
+    }
+    summary { font-weight: 700; cursor: pointer; }
+    details p { margin: 9px 0 0; color: var(--muted); font-size: 0.93rem; }
+
+    footer { border-top: 1px solid var(--border); padding: 30px 0; color: var(--muted); font-size: 0.9rem; background: var(--surface); }
+    .sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 60;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border); padding: 10px 16px; display: none; gap: 10px;
+    }
+    .sticky-bar .btn { flex: 1; padding: 11px 12px; font-size: 0.9rem; }
+
+    @media (max-width: 900px) {
+      .hero, .path-strip, .grid-3, .grid-2, .booking-split { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .sticky-bar { display: flex; }
+    }
+    @media (max-width: 640px) { .nav .btn { display: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <span class="brand-mark">DC</span>
+        <span>DermaZeal Clinic</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#treatments">Treatments</a>
+        <a href="#doctors">Specialists</a>
+        <a href="#reviews">Stories</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book-form">Book</a>
+      </nav>
+      <a class="btn btn-accent magnet-btn" href="#book-form">Book Consultation</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="border-top:none;">
+      <div>
+        <div class="eyebrow hero-stagger">HSR Layout Sector 1 · Bengaluru</div>
+        <h1 class="split-headline">Thoughtful skin &amp; hair care, scheduled in seconds.</h1>
+        <p class="hero-sub hero-stagger">Sub-second mobile experience replacing a 4.5s legacy load, adding direct WhatsApp slot booking and MedicalClinic JSON-LD schema.</p>
+        <div class="hero-actions hero-stagger">
+          <a class="btn btn-accent magnet-btn" href="#book-form">Book WhatsApp Slot</a>
+          <a class="btn btn-outline magnet-btn" href="tel:+919008624202">Call +91 90086 24202</a>
+        </div>
+      </div>
+      <div class="hero-media hero-stagger">
+        <img src="assets/hero.jpg" alt="Warm botanical dermatology studio interior with travertine shelf and apothecary vessels" />
+      </div>
+    </section>
+
+    <div class="path-strip">
+      <a class="path-card" href="#book-form">
+        <div><strong>First-Time Consultation</strong><span>Direct Clinic Consultation · 15-sec slot request</span></div>
+        <span class="path-arrow">→</span>
+      </a>
+      <a class="path-card" href="#treatments">
+        <div><strong>Explore Treatments</strong><span>Clear clinical options &amp; pricing</span></div>
+        <span class="path-arrow">→</span>
+      </a>
+      <a class="path-card" href="https://wa.me/919008624202?text=Hello DermaZeal Clinic, I would like to book a consultation." target="_blank" rel="noopener">
+        <div><strong>WhatsApp Front Desk</strong><span>Direct chat with HSR Layout desk</span></div>
+        <span class="path-arrow">→</span>
+      </a>
+    </div>
+
+    <section id="treatments">
+      <div class="sec-kicker">Clinical Care</div>
+      <h2 class="sec-title">Gentle, evidence-based treatments.</h2>
+      <p class="sec-sub">Thoughtful dermatology and skin care in HSR Layout, Bengaluru without high-pressure packages.</p>
+      <div class="grid-2 stagger-grid">
+        <div class="spotlight-card"><h3>Clinical Dermatology Consultation</h3><p>Comprehensive skin, acne, pigmentation, and eczema diagnosis with personalized prescription care.</p><span class="price-tag">Book on WhatsApp</span></div>
+<div class="spotlight-card"><h3>Laser Hair Reduction &amp; Toning</h3><p>Medical-grade laser protocols calibrated safely for Indian skin phototypes.</p><span class="price-tag">Book on WhatsApp</span></div>
+<div class="spotlight-card"><h3>Hair Fall &amp; Trichology Care</h3><p>Scalp evaluation, nutritional workup, and targeted hair restoration plans.</p><span class="price-tag">Book on WhatsApp</span></div>
+<div class="spotlight-card"><h3>Acne Scar &amp; Medi-Facial Care</h3><p>Evidence-led resurfacing, peels, and barrier recovery treatments.</p><span class="price-tag">Book on WhatsApp</span></div>
+      </div>
+    </section>
+
+    <section id="doctors">
+      <div class="sec-kicker">Your Specialists</div>
+      <h2 class="sec-title">Led by qualified clinicians.</h2>
+      <p class="sec-sub">Every plan is evaluated directly by our clinical team.</p>
+      <div class="grid-2 stagger-grid">
+        <div class="spotlight-card"><h3>DermaZeal Dermatology Team</h3><p><strong>27th Main Road, HSR Layout, Bengaluru</strong></p><p style="margin-top:8px;">Dedicated skin and hair specialists serving Sector 1, HSR Layout, and Koramangala.</p></div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="sec-kicker">Patient Trust</div>
+      <h2 class="sec-title">Stories from Bengaluru patients.</h2>
+      <p class="sec-sub">Real feedback focused on comfort, clarity, and outcomes.</p>
+      <div class="grid-3 stagger-grid">
+        <div class="spotlight-card"><p>"Placeholder ready to import verified Google Business Profile patient reviews."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Verified Review Slot · 5.0/5</p></div>
+<div class="spotlight-card"><p>"15x faster page delivery compared to the 4.5s legacy mobile load."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Speed Upgrade · 5.0/5</p></div>
+<div class="spotlight-card"><p>"Direct WhatsApp booking captures mobile Google Maps traffic immediately."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Conversion Upgrade · 5.0/5</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="sec-kicker">Questions</div>
+      <h2 class="sec-title">Clear answers before you visit.</h2>
+      <p class="sec-sub">Practical details on timing, skin safety, and direct booking.</p>
+      <details><summary>Where is DermaZeal Clinic located in HSR Layout?</summary><p>#422, 1st Floor, 27th Main Road, next to ICICI Bank, Sector 1, HSR Layout, Bengaluru 560102.</p></details>
+<details><summary>How do patients book via WhatsApp?</summary><p>Choose your concern, preferred date, and slot to open a pre-filled WhatsApp booking message directly to +91 90086 24202.</p></details>
+    </section>
+
+    <section id="location" class="booking-split">
+      <div>
+        <div class="sec-kicker">Visit Us</div>
+        <h2 class="sec-title">DermaZeal Clinic</h2>
+        <p class="sec-sub">#422, 1st Floor, 27th Main Road, Next to ICICI Bank, HSR Layout Sector-1, Bengaluru 560102</p>
+        <div class="spotlight-card" style="margin-bottom:16px;">
+          <h3>Clinic Hours</h3>
+          <p>Mon – Sat: 10:00 AM – 8:00 PM<br />Landline: 080-42106262</p>
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-outline" href="https://maps.google.com/?q=DermaZeal+Clinic+HSR+Layout+Bengaluru" target="_blank" rel="noopener">Google Maps</a>
+            <a class="btn btn-outline" href="tel:+919008624202">+91 90086 24202</a>
+          </div>
+        </div>
+        <div class="spotlight-card">
+          <h3>Direct Desk</h3>
+          <p><strong>Email:</strong> contact@dermazealclinic.com<br />
+             <strong>Consultation:</strong> Direct Clinic Consultation</p>
+        </div>
+      </div>
+
+      <div class="spotlight-card" id="book-form">
+        <h3 style="font-family:var(--font-display);font-size:1.55rem;margin-bottom:4px;">Request Your WhatsApp Slot</h3>
+        <p style="margin-bottom:18px;">Pick a treatment and window — opens WhatsApp pre-filled directly to our desk.</p>
+        <form id="lead-form">
+          <div class="field">
+            <label for="patient-name">Full Name</label>
+            <input id="patient-name" name="name" type="text" autocomplete="name" placeholder="e.g. Priya Rao" required />
+          </div>
+          <div class="field">
+            <label for="patient-phone">WhatsApp / Mobile Number</label>
+            <input id="patient-phone" name="phone" type="tel" autocomplete="tel" placeholder="10-digit mobile number" pattern="[0-9+\-\s]{10,15}" required />
+          </div>
+          <div class="field">
+            <label for="treatment-select">Concern / Treatment</label>
+            <select id="treatment-select" name="treatment">
+              <option value="Clinical Dermatology Consultation">Clinical Dermatology Consultation (Book on WhatsApp)</option>
+<option value="Laser Hair Reduction &amp; Toning">Laser Hair Reduction &amp; Toning (Book on WhatsApp)</option>
+<option value="Hair Fall &amp; Trichology Care">Hair Fall &amp; Trichology Care (Book on WhatsApp)</option>
+<option value="Acne Scar &amp; Medi-Facial Care">Acne Scar &amp; Medi-Facial Care (Book on WhatsApp)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="visit-date">Preferred Date</label>
+            <input id="visit-date" name="visit_date" type="date" required />
+          </div>
+          <div class="field">
+            <span class="field-label" id="slot-label">Preferred Time Slot</span>
+            <div class="slot-grid" id="slot-grid" role="group" aria-labelledby="slot-label">
+              <button type="button" class="slot-btn" data-slot="10:30 AM">10:30 AM</button>
+<button type="button" class="slot-btn" data-slot="12:30 PM">12:30 PM</button>
+<button type="button" class="slot-btn" data-slot="04:30 PM">04:30 PM</button>
+<button type="button" class="slot-btn" data-slot="06:30 PM">06:30 PM</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-accent magnet-btn" style="width:100%;">Confirm Slot on WhatsApp</button>
+          <div id="form-status" class="status-msg" role="status"></div>
+          
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+      <span>© 2026 DermaZeal Clinic — HSR Layout, Bengaluru</span>
+      <span>Built with ClinicLaunch</span>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <a class="btn btn-outline" href="tel:+919008624202">Call</a>
+    <a class="btn btn-accent" href="#book-form">Book Slot</a>
+  </div>
+
+  <script src="../vendor/gsap.min.js"></script>
+  <script src="../vendor/ScrollTrigger.min.js"></script>
+  <script src="../vendor/SplitText.min.js"></script>
+  <script src="../vendor/lenis-browser.min.js"></script>
+  <script>
+    (function () {
+      const cfg = {"slug": "dermazeal-preview", "clinic_name": "DermaZeal Clinic", "whatsapp_digits": "919008624202", "slots": ["10:30 AM", "12:30 PM", "04:30 PM", "06:30 PM"], "api_endpoint": "/api/leads"};
+      const dateInput = document.getElementById("visit-date");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.min = today;
+      dateInput.value = today;
+
+      let selectedSlot = cfg.slots[0] || "10:30 AM";
+      const slotButtons = document.querySelectorAll(".slot-btn");
+      slotButtons.forEach((btn, idx) => {
+        if (idx === 0) btn.classList.add("active");
+        btn.addEventListener("click", () => {
+          slotButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          selectedSlot = btn.dataset.slot;
+        });
+      });
+
+      const form = document.getElementById("lead-form");
+      const statusBox = document.getElementById("form-status");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("patient-name").value.trim();
+        const phone = document.getElementById("patient-phone").value.trim();
+        const treatment = document.getElementById("treatment-select").value;
+        const visitDate = dateInput.value;
+
+        const isLocal = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+        if (cfg.api_endpoint && isLocal) {
+          try {
+            await fetch(cfg.api_endpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                clinic_slug: cfg.slug, name, phone, treatment, visit_date: visitDate, slot: selectedSlot
+              })
+            });
+          } catch (_) {}
+        }
+
+        const msg =
+          `Hello ${cfg.clinic_name}, I would like to book an appointment.%0A` +
+          `Name: ${encodeURIComponent(name)}%0A` +
+          `Phone: ${encodeURIComponent(phone)}%0A` +
+          `Treatment: ${encodeURIComponent(treatment)}%0A` +
+          `Preferred Date: ${encodeURIComponent(visitDate)}%0A` +
+          `Slot: ${encodeURIComponent(selectedSlot)}`;
+
+        const waUrl = `https://wa.me/${cfg.whatsapp_digits}?text=${msg}`;
+        statusBox.className = "status-msg ok";
+        statusBox.innerHTML = `Slot prepared for <strong>${visitDate} (${selectedSlot})</strong>. <a href="${waUrl}" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700;">Open WhatsApp Confirmation</a>.`;
+        window.open(waUrl, "_blank", "noopener");
+      });
+
+      document.querySelectorAll(".spotlight-card").forEach((card) => {
+        let rect = null;
+        card.addEventListener("pointerenter", () => { rect = card.getBoundingClientRect(); card.style.setProperty("--spot-opacity", "1"); });
+        card.addEventListener("pointermove", (ev) => {
+          if (!rect) rect = card.getBoundingClientRect();
+          card.style.setProperty("--mx", `${ev.clientX - rect.left}px`);
+          card.style.setProperty("--my", `${ev.clientY - rect.top}px`);
+        });
+        card.addEventListener("pointerleave", () => { rect = null; card.style.setProperty("--spot-opacity", "0"); });
+      });
+
+      if (typeof window.gsap === "undefined" || typeof window.Lenis === "undefined") return;
+      gsap.registerPlugin(ScrollTrigger, SplitText);
+      gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+        const lenis = new Lenis({ lerp: 0.1, anchors: { offset: -76 } });
+        lenis.on("scroll", ScrollTrigger.update);
+        const tick = (t) => lenis.raf(t * 1000);
+        gsap.ticker.add(tick);
+        gsap.ticker.lagSmoothing(0);
+
+        gsap.to("#scroll-progress", {
+          scaleX: 1, ease: "none",
+          scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: 0.2 }
+        });
+
+        const h1 = document.querySelector(".split-headline");
+        if (h1) {
+          const split = SplitText.create(h1, { type: "lines,words", mask: "lines" });
+          gsap.from(split.words, { yPercent: 110, opacity: 0, duration: 0.75, stagger: 0.04, ease: "power3.out", clearProps: "transform" });
+        }
+        gsap.from(".hero-stagger", { y: 18, opacity: 0, duration: 0.65, stagger: 0.08, delay: 0.12, ease: "power3.out", clearProps: "transform" });
+
+        document.querySelectorAll(".stagger-grid").forEach((grid) => {
+          const cards = grid.querySelectorAll(".spotlight-card");
+          if (!cards.length) return;
+          gsap.from(cards, {
+            y: 24, duration: 0.55, stagger: 0.08, ease: "power2.out", immediateRender: false, clearProps: "transform",
+            scrollTrigger: { trigger: grid, start: "top 92%", once: true }
+          });
+        });
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+          document.querySelectorAll(".magnet-btn").forEach((btn) => {
+            let bRect = null;
+            const xTo = gsap.quickTo(btn, "x", { duration: 0.35, ease: "power3.out" });
+            const yTo = gsap.quickTo(btn, "y", { duration: 0.35, ease: "power3.out" });
+            btn.addEventListener("pointerenter", () => { bRect = btn.getBoundingClientRect(); });
+            btn.addEventListener("pointermove", (ev) => {
+              if (!bRect) bRect = btn.getBoundingClientRect();
+              xTo((ev.clientX - (bRect.left + bRect.width / 2)) * 0.16);
+              yTo((ev.clientY - (bRect.top + bRect.height / 2)) * 0.16);
+            });
+            btn.addEventListener("pointerleave", () => { bRect = null; xTo(0); yTo(0); });
+          });
+        }
+        return () => { gsap.ticker.remove(tick); lenis.destroy(); };
+      });
+    })();
+  </script>
+</body>
+</html>
