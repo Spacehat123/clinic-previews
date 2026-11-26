@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Skin Atelier — Clinical Dermatology &amp; Precision Laser Medicine | Bengaluru</title>
+  <meta name="description" content="Board-certified dermatology, laser resurfacing, and bespoke skin protocols in Indiranagar, Bengaluru." />
+  <meta property="og:title" content="Aura Skin Atelier — Bengaluru" />
+  <meta property="og:description" content="Board-certified dermatology, laser resurfacing, and bespoke skin protocols in Indiranagar, Bengaluru." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23141618'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c9ae82' stroke-width='2'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Aura Skin Atelier", "description": "Board-certified dermatology, laser resurfacing, and bespoke skin protocols in Indiranagar, Bengaluru.", "telephone": "+91 98450 11223", "email": "concierge@auraskinatelier.example", "priceRange": "₹1,200 Consultation", "address": {"@type": "PostalAddress", "streetAddress": "100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038", "addressLocality": "Bengaluru", "addressCountry": "IN"}, "openingHours": ["Tu-Su 10:30-19:30"]}</script>
+  <style>
+    html.lenis, html.lenis body { height: auto; }
+    .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+    .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+    .lenis.lenis-smooth iframe { pointer-events: none; }
+
+    :root {
+      --bg: #111315;
+      --surface: #191c1f;
+      --ink: #f2ede4;
+      --muted: #a7a196;
+      --border: rgba(242, 237, 228, 0.13);
+      --primary: #1c2024;
+      --primary-dark: #111315;
+      --accent: #c9ae82;
+      --font-display: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 84px; }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: clip;
+      padding-bottom: 76px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 70;
+      background: var(--accent); transform-origin: 0% 50%; transform: scaleX(0);
+      pointer-events: none;
+    }
+
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 20px; }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.96rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .brand-mark {
+      width: 30px; height: 30px; border-radius: 50%;
+      border: 1px solid var(--accent); color: var(--accent);
+      display: grid; place-items: center; font-size: 0.72rem; font-weight: 700;
+    }
+    .nav-links { display: flex; gap: 28px; font-size: 0.88rem; color: var(--muted); letter-spacing: 0.02em; }
+    .nav-links a:hover { color: var(--ink); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 24px; border-radius: 999px; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.01em; border: 1px solid transparent; cursor: pointer;
+      transition: background .2s ease, color .2s ease, border-color .2s ease;
+      will-change: transform;
+    }
+    .btn-accent { background: var(--accent); color: #111315; }
+    .btn-accent:hover { background: color-mix(in srgb, var(--accent) 85%, #fff); }
+    .btn-ghost { background: transparent; border-color: var(--border); color: var(--ink); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    /* Editorial Noir Hero — generous negative space + floating subject over display type */
+    .hero {
+      padding: 64px 0 56px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      min-height: calc(100svh - 72px);
+    }
+    .eyebrow {
+      font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); font-weight: 600; margin-bottom: 18px;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2.6rem, 5.2vw, 4.7rem);
+      line-height: 1.01;
+      letter-spacing: -0.03em;
+      margin: 0 0 24px;
+    }
+    .hero-sub {
+      color: var(--muted);
+      font-size: 1.06rem;
+      max-width: 44ch;
+      margin: 0 0 32px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-frame {
+      position: relative;
+      width: min(100%, 440px);
+      aspect-ratio: 3 / 4;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: 0 36px 80px -30px rgba(0, 0, 0, 0.75);
+    }
+    .hero-frame img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      will-change: transform;
+    }
+    .hero-caption {
+      position: absolute; left: 18px; right: 18px; bottom: 18px;
+      padding: 12px 16px; border-radius: 12px;
+      background: rgba(17, 19, 21, 0.76);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      font-size: 0.8rem; color: #ece7de;
+    }
+    .hero-caption span:last-child { color: var(--accent); font-weight: 600; }
+
+    /* Signature DrawSVG rule */
+    .draw-divider { width: 100%; height: 28px; display: block; opacity: 0.7; }
+
+    /* Outcome metrics band */
+    .metrics-band {
+      padding: 36px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .metric-item { padding: 8px 0; }
+    .metric-val {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.6vw, 3rem);
+      line-height: 1.05; color: var(--ink); margin-bottom: 6px;
+    }
+    .metric-lbl { font-size: 0.88rem; color: var(--muted); }
+
+    section { padding: 72px 0; }
+    .sec-head {
+      display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 32px;
+      align-items: end; margin-bottom: 40px;
+    }
+    .sec-kicker {
+      font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); font-weight: 600; margin-bottom: 10px;
+    }
+    .sec-title {
+      font-family: var(--font-display); font-weight: 400;
+      font-size: clamp(1.9rem, 3.4vw, 2.9rem); line-height: 1.1; margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .sec-desc { margin: 0; color: var(--muted); max-width: 50ch; font-size: 0.98rem; }
+
+    /* Numbered editorial protocol rows */
+    .protocol-list { border-top: 1px solid var(--border); }
+    .protocol-row {
+      display: grid; grid-template-columns: 72px 1.1fr 1.4fr auto; gap: 24px;
+      align-items: center; padding: 26px 8px;
+      border-bottom: 1px solid var(--border);
+      transition: background .25s ease;
+    }
+    .protocol-row:hover { background: color-mix(in srgb, var(--surface) 65%, transparent); }
+    .protocol-num { font-family: var(--font-display); font-size: 1.25rem; color: var(--accent); }
+    .protocol-name { font-size: 1.16rem; font-weight: 600; margin: 0; }
+    .protocol-desc { font-size: 0.93rem; color: var(--muted); margin: 0; }
+    .protocol-price { font-size: 0.85rem; color: var(--accent); font-weight: 600; white-space: nowrap; }
+
+    /* React Bits SpotlightCard */
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .spotlight-card {
+      position: relative; isolation: isolate; overflow: hidden;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 18px; padding: 28px;
+      --mx: 50%; --my: 50%; --spot-opacity: 0;
+    }
+    .spotlight-card::before, .spotlight-card::after {
+      content: ""; position: absolute; inset: 0; border-radius: inherit;
+      pointer-events: none; opacity: var(--spot-opacity); transition: opacity 220ms ease;
+    }
+    .spotlight-card::before {
+      z-index: -1;
+      background: radial-gradient(300px circle at var(--mx) var(--my),
+        color-mix(in srgb, var(--accent) 12%, transparent), transparent 72%);
+    }
+    .spotlight-card::after {
+      z-index: 2; padding: 1px;
+      background: radial-gradient(240px circle at var(--mx) var(--my),
+        color-mix(in srgb, var(--accent) 55%, transparent), transparent 70%);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    }
+    .spotlight-card h3 { margin: 0 0 8px; font-size: 1.12rem; font-weight: 600; }
+    .spotlight-card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+
+    /* Dedicated consultation booking section */
+    .booking-split {
+      display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 36px; align-items: start;
+      border-top: 1px solid var(--border); padding-top: 64px;
+    }
+    .field { margin-bottom: 14px; }
+    .field label, .field-label { display: block; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .field input, .field select {
+      width: 100%; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid var(--border); font-size: 0.95rem;
+      background: var(--bg); color: var(--ink);
+    }
+    .field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+    .slot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 16px; }
+    .slot-btn {
+      padding: 10px; border-radius: 9px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--ink); font-size: 0.84rem; font-weight: 600; cursor: pointer;
+    }
+    .slot-btn.active { background: var(--accent); color: #111315; border-color: var(--accent); }
+    .status-msg { margin-top: 12px; padding: 10px 12px; border-radius: 10px; font-size: 0.88rem; display: none; }
+    .status-msg.ok { display: block; background: rgba(201, 174, 130, 0.14); color: var(--ink); border: 1px solid var(--accent); }
+    .upi-box { margin-top: 14px; padding: 12px; border-radius: 10px; border: 1px dashed var(--accent); font-size: 0.84rem; color: var(--muted); }
+
+    details {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 22px; margin-bottom: 10px;
+    }
+    summary { font-weight: 600; cursor: pointer; }
+    details p { margin: 10px 0 0; color: var(--muted); font-size: 0.93rem; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 34px 0;
+      color: var(--muted); font-size: 0.88rem;
+    }
+    .sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 60;
+      background: color-mix(in srgb, var(--bg) 94%, transparent);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px; display: none; gap: 10px;
+    }
+    .sticky-bar .btn { flex: 1; padding: 11px 12px; font-size: 0.88rem; }
+
+    @media (max-width: 920px) {
+      .hero, .sec-head, .booking-split, .grid-2, .grid-3, .metrics-band { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 40px 0; }
+      .protocol-row { grid-template-columns: 44px 1fr; gap: 10px; }
+      .protocol-desc, .protocol-price { grid-column: 2; }
+      .nav-links { display: none; }
+      .sticky-bar { display: flex; }
+    }
+    @media (max-width: 640px) {
+      .nav .btn { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <span class="brand-mark">AS</span>
+        <span>Aura Skin Atelier</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#treatments">Protocols</a>
+        <a href="#doctors">Specialists</a>
+        <a href="#reviews">Patients</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book-form">Reserve</a>
+      </nav>
+      <a class="btn btn-accent magnet-btn" href="#book-form">Reserve Visit</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow hero-stagger">Indiranagar · Bengaluru</div>
+        <h1 class="split-headline">Precision skin medicine, quietly perfected.</h1>
+        <p class="hero-sub hero-stagger">Diagnostic dermatology, US-FDA cleared laser protocols, and custom barrier formulations tailored to Indian skin phototypes.</p>
+        <div class="hero-actions hero-stagger">
+          <a class="btn btn-accent magnet-btn" href="#book-form">Reserve Consultation</a>
+          <a class="btn btn-ghost magnet-btn" href="https://wa.me/919845011223?text=Hello Aura Skin Atelier, I would like to book a consultation." target="_blank" rel="noopener">WhatsApp Concierge</a>
+        </div>
+      </div>
+
+      <div class="hero-visual hero-stagger">
+        <div class="hero-frame">
+          <img src="assets/hero.jpg" alt="Minimalist obsidian glass clinical serum bottle on travertine plinth" class="parallax-img" />
+          <div class="hero-caption">
+            <span>Indiranagar, Bengaluru</span>
+            <span>₹1,200 Consultation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="draw-divider" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true">
+      <path class="draw-line" d="M0 14 L520 14 Q560 14 580 6 T620 22 Q640 14 680 14 L1200 14" fill="none" stroke="var(--accent)" stroke-width="1.2" />
+    </svg>
+
+    <div class="metrics-band">
+      <div class="metric-item"><div class="metric-val">14,000+</div><div class="metric-lbl">Clinical laser &amp; dermatology sessions completed</div></div>
+<div class="metric-item"><div class="metric-val">4.9 ★</div><div class="metric-lbl">Verified patient rating across Indiranagar</div></div>
+<div class="metric-item"><div class="metric-val">15 sec</div><div class="metric-lbl">Direct WhatsApp scheduling with zero wait</div></div>
+    </div>
+
+    <section id="treatments">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">Clinical Protocols</div>
+          <h2 class="sec-title">Evidence-led aesthetics &amp; restorative skin care.</h2>
+        </div>
+        <p class="sec-desc">Every treatment plan in Indiranagar, Bengaluru begins with diagnostic imaging and transparent clinical pricing.</p>
+      </div>
+      <div class="protocol-list">
+        <div class="protocol-row"><div class="protocol-num">01</div><h3 class="protocol-name">3D Dermoscopy &amp; Skin Mapping</h3><p class="protocol-desc">High-magnification pigment, pore, and UV-damage diagnostic baseline before any active protocol.</p><span class="protocol-price">₹1,200 Consult</span></div>
+<div class="protocol-row"><div class="protocol-num">02</div><h3 class="protocol-name">Pico Toning &amp; Pigment Reset</h3><p class="protocol-desc">Picosecond laser clearance for melasma, sun spots, and post-acne hyperpigmentation with minimal downtime.</p><span class="protocol-price">From ₹6,500</span></div>
+<div class="protocol-row"><div class="protocol-num">03</div><h3 class="protocol-name">Microneedling RF Scar Revision</h3><p class="protocol-desc">Controlled dermal collagen remodeling calibrated specifically for acne scarring and skin laxity.</p><span class="protocol-price">From ₹8,000</span></div>
+<div class="protocol-row"><div class="protocol-num">04</div><h3 class="protocol-name">Barrier Recovery &amp; Medical Facials</h3><p class="protocol-desc">Non-irritating hydrating infusions and barrier lipid restoration for sensitized skin.</p><span class="protocol-price">From ₹4,200</span></div>
+      </div>
+    </section>
+
+    <section id="doctors">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">Clinical Leadership</div>
+          <h2 class="sec-title">Board-certified dermatology.</h2>
+        </div>
+        <p class="sec-desc">Unhurried consultations led directly by specialist physicians.</p>
+      </div>
+      <div class="grid-2 stagger-grid">
+        <div class="spotlight-card"><h3>Dr. Kavya Deshmukh, MD (DVL)</h3><p><strong>MD Dermatology · Fellowship in Laser &amp; Aesthetic Surgery</strong></p><p style="margin-top:8px;">11 years specializing in pigmentary disorders, acne scar remodeling, and conservative facial balance for South Asian skin.</p></div>
+<div class="spotlight-card"><h3>Dr. Rohan Menon, MD</h3><p><strong>MD Dermatology · Trichology &amp; Clinical Scalp Protocols</strong></p><p style="margin-top:8px;">Focuses on evidence-based hair restoration, PRP regimens, and chronic inflammatory skin care.</p></div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">Patient Notes</div>
+          <h2 class="sec-title">Measured outcomes across Bengaluru.</h2>
+        </div>
+        <p class="sec-desc">Verified clinic feedback from real consultations and laser regimens.</p>
+      </div>
+      <div class="grid-3 stagger-grid">
+        <div class="spotlight-card"><p>"No pushy package sales. Dr. Kavya mapped my melasma first and fixed my barrier before touching a laser."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Shruti R. · 5.0/5</p></div>
+<div class="spotlight-card"><p>"Quiet, calm space on 100ft Road and my WhatsApp slot started right on time."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Arjun K. · 5.0/5</p></div>
+<div class="spotlight-card"><p>"After three RF sessions my acne scars faded visibly without prolonged redness."</p><p style="margin-top:12px;font-weight:600;color:var(--ink);">— Neha T. · 4.9/5</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="sec-head">
+        <div>
+          <div class="sec-kicker">Clarity</div>
+          <h2 class="sec-title">Before your appointment.</h2>
+        </div>
+        <p class="sec-desc">Everything you need to know about consultations, safety, and booking.</p>
+      </div>
+      <details><summary>Are laser settings safe for Indian skin tones (Fitzpatrick IV–V)?</summary><p>Yes. Every laser session is calibrated by a board-certified MD dermatologist using long-pulse and picosecond wavelengths tested for melanin-rich skin.</p></details>
+<details><summary>Can I book a consultation without committing to a multi-session package?</summary><p>Always. Your initial visit covers diagnosis and an honest regimen whether you choose clinic procedures or prescription home care.</p></details>
+    </section>
+
+    <section id="location" class="booking-split">
+      <div>
+        <div class="sec-kicker">Private Scheduling</div>
+        <h2 class="sec-title" style="margin-bottom:14px;">Visit Aura Skin Atelier</h2>
+        <p class="sec-desc" style="margin-bottom:24px;">100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038</p>
+        <div class="spotlight-card" style="margin-bottom:16px;">
+          <h3>Studio Hours</h3>
+          <p>Tue – Sun: 10:30 AM – 7:30 PM<br />Monday: Closed for Equipment Calibration</p>
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru" target="_blank" rel="noopener">Directions</a>
+            <a class="btn btn-ghost" href="tel:+919845011223">+91 98450 11223</a>
+          </div>
+        </div>
+        <div class="spotlight-card">
+          <h3>Direct Desk</h3>
+          <p><strong>Email:</strong> concierge@auraskinatelier.example<br />
+             <strong>Consultation:</strong> ₹1,200 Consultation</p>
+        </div>
+      </div>
+
+      <div class="spotlight-card" id="book-form">
+        <div class="sec-kicker">WhatsApp Slot Desk</div>
+        <h3 style="font-family:var(--font-display);font-size:1.65rem;font-weight:400;margin-bottom:6px;">Request an Appointment</h3>
+        <p style="margin-bottom:18px;">Select your protocol and preferred window to open a pre-filled WhatsApp confirmation.</p>
+        <form id="lead-form">
+          <div class="field">
+            <label for="patient-name">Full Name</label>
+            <input id="patient-name" name="name" type="text" autocomplete="name" placeholder="e.g. Meera Nair" required />
+          </div>
+          <div class="field">
+            <label for="patient-phone">WhatsApp / Mobile Number</label>
+            <input id="patient-phone" name="phone" type="tel" autocomplete="tel" placeholder="10-digit mobile number" pattern="[0-9+\-\s]{10,15}" required />
+          </div>
+          <div class="field">
+            <label for="treatment-select">Clinical Protocol</label>
+            <select id="treatment-select" name="treatment">
+              <option value="3D Dermoscopy &amp; Skin Mapping">3D Dermoscopy &amp; Skin Mapping (₹1,200 Consult)</option>
+<option value="Pico Toning &amp; Pigment Reset">Pico Toning &amp; Pigment Reset (From ₹6,500)</option>
+<option value="Microneedling RF Scar Revision">Microneedling RF Scar Revision (From ₹8,000)</option>
+<option value="Barrier Recovery &amp; Medical Facials">Barrier Recovery &amp; Medical Facials (From ₹4,200)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="visit-date">Preferred Date</label>
+            <input id="visit-date" name="visit_date" type="date" required />
+          </div>
+          <div class="field">
+            <span class="field-label" id="slot-label">Preferred Time Window</span>
+            <div class="slot-grid" id="slot-grid" role="group" aria-labelledby="slot-label">
+              <button type="button" class="slot-btn" data-slot="11:00 AM">11:00 AM</button>
+<button type="button" class="slot-btn" data-slot="01:30 PM">01:30 PM</button>
+<button type="button" class="slot-btn" data-slot="04:30 PM">04:30 PM</button>
+<button type="button" class="slot-btn" data-slot="06:30 PM">06:30 PM</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-accent magnet-btn" style="width:100%;">Confirm Slot on WhatsApp</button>
+          <div id="form-status" class="status-msg" role="status"></div>
+          
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+      <span>© 2026 Aura Skin Atelier — Indiranagar, Bengaluru</span>
+      <span>Crafted with ClinicLaunch Editorial Engine</span>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <a class="btn btn-ghost" href="tel:+919845011223">Call</a>
+    <a class="btn btn-accent" href="#book-form">Reserve Slot</a>
+  </div>
+
+  <script src="../vendor/gsap.min.js"></script>
+  <script src="../vendor/ScrollTrigger.min.js"></script>
+  <script src="../vendor/SplitText.min.js"></script>
+  <script src="../vendor/DrawSVGPlugin.min.js"></script>
+  <script src="../vendor/lenis-browser.min.js"></script>
+  <script>
+    (function () {
+      const cfg = {"slug": "aura-skin-atelier", "clinic_name": "Aura Skin Atelier", "whatsapp_digits": "919845011223", "slots": ["11:00 AM", "01:30 PM", "04:30 PM", "06:30 PM"], "api_endpoint": "/api/leads"};
+      const dateInput = document.getElementById("visit-date");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.min = today;
+      dateInput.value = today;
+
+      let selectedSlot = cfg.slots[0] || "10:30 AM";
+      const slotButtons = document.querySelectorAll(".slot-btn");
+      slotButtons.forEach((btn, idx) => {
+        if (idx === 0) btn.classList.add("active");
+        btn.addEventListener("click", () => {
+          slotButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          selectedSlot = btn.dataset.slot;
+        });
+      });
+
+      const form = document.getElementById("lead-form");
+      const statusBox = document.getElementById("form-status");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("patient-name").value.trim();
+        const phone = document.getElementById("patient-phone").value.trim();
+        const treatment = document.getElementById("treatment-select").value;
+        const visitDate = dateInput.value;
+
+        const isLocal = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+        if (cfg.api_endpoint && isLocal) {
+          try {
+            await fetch(cfg.api_endpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                clinic_slug: cfg.slug,
+                name,
+                phone,
+                treatment,
+                visit_date: visitDate,
+                slot: selectedSlot
+              })
+            });
+          } catch (_) {}
+        }
+
+        const msg =
+          `Hello ${cfg.clinic_name}, I would like to book an appointment.%0A` +
+          `Name: ${encodeURIComponent(name)}%0A` +
+          `Phone: ${encodeURIComponent(phone)}%0A` +
+          `Protocol: ${encodeURIComponent(treatment)}%0A` +
+          `Preferred Date: ${encodeURIComponent(visitDate)}%0A` +
+          `Slot: ${encodeURIComponent(selectedSlot)}`;
+
+        const waUrl = `https://wa.me/${cfg.whatsapp_digits}?text=${msg}`;
+        statusBox.className = "status-msg ok";
+        statusBox.innerHTML = `Slot prepared for <strong>${visitDate} (${selectedSlot})</strong>. <a href="${waUrl}" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700;">Open WhatsApp Confirmation</a>.`;
+        window.open(waUrl, "_blank", "noopener");
+      });
+
+      document.querySelectorAll(".spotlight-card").forEach((card) => {
+        let rect = null;
+        card.addEventListener("pointerenter", () => {
+          rect = card.getBoundingClientRect();
+          card.style.setProperty("--spot-opacity", "1");
+        });
+        card.addEventListener("pointermove", (ev) => {
+          if (!rect) rect = card.getBoundingClientRect();
+          card.style.setProperty("--mx", `${ev.clientX - rect.left}px`);
+          card.style.setProperty("--my", `${ev.clientY - rect.top}px`);
+        });
+        card.addEventListener("pointerleave", () => {
+          rect = null;
+          card.style.setProperty("--spot-opacity", "0");
+        });
+      });
+
+      if (typeof window.gsap === "undefined" || typeof window.Lenis === "undefined") return;
+
+      gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin);
+      gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+        const lenis = new Lenis({ lerp: 0.09, anchors: { offset: -78 } });
+        lenis.on("scroll", ScrollTrigger.update);
+        const tick = (t) => lenis.raf(t * 1000);
+        gsap.ticker.add(tick);
+        gsap.ticker.lagSmoothing(0);
+
+        gsap.to("#scroll-progress", {
+          scaleX: 1, ease: "none",
+          scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: 0.2 }
+        });
+
+        const h1 = document.querySelector(".split-headline");
+        if (h1) {
+          const split = SplitText.create(h1, { type: "lines,words", mask: "lines" });
+          gsap.from(split.words, {
+            yPercent: 110, opacity: 0, duration: 0.85, stagger: 0.04, ease: "power3.out",
+            clearProps: "transform"
+          });
+        }
+
+        gsap.from(".hero-stagger", {
+          y: 20, opacity: 0, duration: 0.7, stagger: 0.09, delay: 0.12, ease: "power3.out",
+          clearProps: "transform"
+        });
+
+        gsap.to(".parallax-img", {
+          yPercent: 8, ease: "none",
+          scrollTrigger: { trigger: ".hero-frame", start: "top bottom", end: "bottom top", scrub: true }
+        });
+
+        gsap.from(".draw-line", {
+          drawSVG: "0%", duration: 1.1, ease: "power2.inOut",
+          scrollTrigger: { trigger: ".draw-divider", start: "top 92%", once: true }
+        });
+
+        gsap.from(".protocol-row", {
+          y: 22, duration: 0.55, stagger: 0.07, ease: "power2.out", immediateRender: false, clearProps: "transform",
+          scrollTrigger: { trigger: ".protocol-list", start: "top 92%", once: true }
+        });
+
+        document.querySelectorAll(".stagger-grid").forEach((grid) => {
+          const cards = grid.querySelectorAll(".spotlight-card");
+          if (!cards.length) return;
+          gsap.from(cards, {
+            y: 24, duration: 0.6, stagger: 0.08, ease: "power2.out", immediateRender: false, clearProps: "transform",
+            scrollTrigger: { trigger: grid, start: "top 92%", once: true }
+          });
+        });
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+          document.querySelectorAll(".magnet-btn").forEach((btn) => {
+            let bRect = null;
+            const xTo = gsap.quickTo(btn, "x", { duration: 0.35, ease: "power3.out" });
+            const yTo = gsap.quickTo(btn, "y", { duration: 0.35, ease: "power3.out" });
+            btn.addEventListener("pointerenter", () => { bRect = btn.getBoundingClientRect(); });
+            btn.addEventListener("pointermove", (ev) => {
+              if (!bRect) bRect = btn.getBoundingClientRect();
+              xTo((ev.clientX - (bRect.left + bRect.width / 2)) * 0.16);
+              yTo((ev.clientY - (bRect.top + bRect.height / 2)) * 0.16);
+            });
+            btn.addEventListener("pointerleave", () => { bRect = null; xTo(0); yTo(0); });
+          });
+        }
+
+        return () => { gsap.ticker.remove(tick); lenis.destroy(); };
+      });
+    })();
+  </script>
+</body>
+</html>
